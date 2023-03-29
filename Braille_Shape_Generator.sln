@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Braille_Shape_Generator_Service", "Braille_Shape_Generator_Service\Braille_Shape_Generator_Service.csproj", "{A7688A8D-4400-44DF-88CD-49EBE3F84EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Braille_Shape_Generator_Client", "Braille_Shape_Generator_Client\Braille_Shape_Generator_Client.csproj", "{86DB5C65-981D-4793-9652-0623A1FF0FD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A7688A8D-4400-44DF-88CD-49EBE3F84EA6} = {A7688A8D-4400-44DF-88CD-49EBE3F84EA6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7688A8D-4400-44DF-88CD-49EBE3F84EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7688A8D-4400-44DF-88CD-49EBE3F84EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7688A8D-4400-44DF-88CD-49EBE3F84EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7688A8D-4400-44DF-88CD-49EBE3F84EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DB5C65-981D-4793-9652-0623A1FF0FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DB5C65-981D-4793-9652-0623A1FF0FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DB5C65-981D-4793-9652-0623A1FF0FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DB5C65-981D-4793-9652-0623A1FF0FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11B4B29C-9C1A-4332-8B99-8B7178CEDE7D}
+	EndGlobalSection
+EndGlobal
