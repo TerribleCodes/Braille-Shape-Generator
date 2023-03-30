@@ -57,3 +57,7 @@ C:\Users\DELL\source\repos\Braille_Shape_Generator\Braille_Shape_Generator_Clien
 C:\Users\DELL\source\repos\Braille_Shape_Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.csproj.CopyComplete
 C:\Users\DELL\source\repos\Braille_Shape_Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.dll
 C:\Users\DELL\source\repos\Braille_Shape_Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.pdb
+C:\Users\bathi\Source\Repos\Braille-Shape-Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.csproj.AssemblyReference.cache
+C:\Users\bathi\Source\Repos\Braille-Shape-Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.csproj.CoreCompileInputs.cache
+C:\Users\bathi\Source\Repos\Braille-Shape-Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.dll
+C:\Users\bathi\Source\Repos\Braille-Shape-Generator\Braille_Shape_Generator_Client\obj\Debug\Braille_Shape_Generator_Client.pdb

@@ -6,27 +6,108 @@
 <head runat="server">
     <title>Braille Shape Generator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 47px;
+        }
+        .auto-style2 {
+            height: 477px;
+        }
+        .auto-style3 {
+            height: 550px;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 472px;
+        }
+        .auto-style7 {
+            height: 49px;
+        }
+        .auto-style8 {
+            height: 49px;
+            width: 550px;
+        }
+        .auto-style9 {
+            width: 550px;
+        }
+    </style>
 </head>
-<body>
+<body style="height: 1080px">
     <form id="form1" runat="server">
-        <div>
-            <table>
+        <div class="auto-style1">
+            <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Names="Montserrat Alternates Black" Font-Size="Larger" Height="40px" Text="                                          Hima's Braille Shape Generator" Width="1498px"></asp:Label>
+        </div>
+        <div class="auto-style2">
+            <table class="auto-style4">
                 <tr>
-                    <td>Radius: </td>
-                    <td><asp:TextBox ID="circle_radius" runat="server"></asp:TextBox></td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Button ID="print_circle" runat="server" Text="Print" OnClick="print_circle_Click" /></td>
-                    <td><asp:Button ID="reset_radius" runat="server" Text="Reset" /></td>
-                </tr>
-                <tr>
-                    <td>
-                        <!-- Result -->
-                        <asp:Label ID="circle_result" runat="server"></asp:Label>
+                    <td class="auto-style8">
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Names="Montserrat Alternates Medium" Font-Size="Larger" Text="Shapes"></asp:Label>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Names="Montserrat Alternates Medium" Font-Size="Larger" Text="Characters"></asp:Label>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Names="Montserrat Alternates Medium" Font-Size="Larger" Text="History"></asp:Label>
                     </td>
                 </tr>
+                <tr>
+                    <td class="auto-style9">
+                        <asp:Label ID="Label5" runat="server" Font-Names="Montserrat Alternates SemiBold" Text="Select Shape: "></asp:Label>
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="152px">
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:Label ID="Label6" runat="server" Font-Names="Montserrat Alternates SemiBold" Text="Select Character: "></asp:Label>
+                        <asp:DropDownList ID="DropDownList2" runat="server" Height="25px" Width="152px">
+                        </asp:DropDownList>
+                        <asp:Button ID="Button1" runat="server" Font-Names="Montserrat Alternates SemiBold" Text="Lower Case" />
+                        <asp:Button ID="Button2" runat="server" Font-Names="Montserrat Alternates SemiBold" Text="Upper Case" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
             </table>
+        </div>
+        <div class="auto-style3">
         </div>
     </form>
 </body>
