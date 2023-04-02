@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Braille_Shape_Generator_Client.Default_Service_Reference {
+namespace Braille_Shape_Generator_Client.ShapeGeneratorService {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Default_Service_Reference.Shape_Generator_ServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ShapeGeneratorService.Shape_Generator_ServiceSoap")]
     public interface Shape_Generator_ServiceSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Circle", ReplyAction="*")]
@@ -41,12 +41,12 @@ namespace Braille_Shape_Generator_Client.Default_Service_Reference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface Shape_Generator_ServiceSoapChannel : Braille_Shape_Generator_Client.Default_Service_Reference.Shape_Generator_ServiceSoap, System.ServiceModel.IClientChannel {
+    public interface Shape_Generator_ServiceSoapChannel : Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Shape_Generator_ServiceSoapClient : System.ServiceModel.ClientBase<Braille_Shape_Generator_Client.Default_Service_Reference.Shape_Generator_ServiceSoap>, Braille_Shape_Generator_Client.Default_Service_Reference.Shape_Generator_ServiceSoap {
+    public partial class Shape_Generator_ServiceSoapClient : System.ServiceModel.ClientBase<Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap>, Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap {
         
         public Shape_Generator_ServiceSoapClient() {
         }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="OtEdwirfjf7YRXKsU+miyTCWFlWt+ZeumihYoBmcuIs=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="HTATgryUNXG3ER4kn1BMcDbf+gpjRDbtzCLvx74s7E0=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="Shape_Generator_ServiceSoap">
       <properties>
@@ -221,7 +221,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="Shape_Generator_ServiceSoap" contract="Default_Service_Reference.Shape_Generator_ServiceSoap" bindingType="basicHttpBinding" address="https://localhost:44399/Shape_Generator_Service.asmx" bindingConfiguration="Shape_Generator_ServiceSoap">
+    <endpoint name="Shape_Generator_ServiceSoap" contract="ShapeGeneratorService.Shape_Generator_ServiceSoap" bindingType="basicHttpBinding" address="https://localhost:44399/Shape_Generator_Service.asmx" bindingConfiguration="Shape_Generator_ServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>https://localhost:44399/Shape_Generator_Service.asmx</serializedValue>
@@ -236,7 +236,7 @@
           <serializedValue>Shape_Generator_ServiceSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>Default_Service_Reference.Shape_Generator_ServiceSoap</serializedValue>
+          <serializedValue>ShapeGeneratorService.Shape_Generator_ServiceSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

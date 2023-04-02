@@ -74,20 +74,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Default_Service_Reference\Shape_Generator_Service.disco" />
-    <None Include="Connected Services\Default_Service_Reference\configuration91.svcinfo" />
-    <None Include="Connected Services\Default_Service_Reference\configuration.svcinfo" />
-    <None Include="Connected Services\Default_Service_Reference\Reference.svcmap">
+    <None Include="Connected Services\ShapeGeneratorService\Shape_Generator_Service.disco" />
+    <None Include="Connected Services\ShapeGeneratorService\configuration91.svcinfo" />
+    <None Include="Connected Services\ShapeGeneratorService\configuration.svcinfo" />
+    <None Include="Connected Services\ShapeGeneratorService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="index.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
-    <None Include="Connected Services\Default_Service_Reference\Shape_Generator_Service.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\Default_Service_Reference\Reference.cs">
+    <Compile Include="Connected Services\ShapeGeneratorService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -102,6 +101,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ShapeGeneratorService\Shape_Generator_Service.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -114,7 +114,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\Default_Service_Reference\" />
+    <WCFMetadataStorage Include="Connected Services\ShapeGeneratorService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

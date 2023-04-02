@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="a676ec08-be17-4b0f-b0d3-df0a5b6c0652" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="bf120c51-dc9e-41f0-9a65-09fd5f51013c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="https://localhost:44399/Shape_Generator_Service.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Shape_Generator_Service.disco" MetadataType="Disco" ID="bd593a4f-14cd-4576-954e-e8369fa15603" SourceId="1" SourceUrl="https://localhost:44399/Shape_Generator_Service.asmx?disco" />
-    <MetadataFile FileName="Shape_Generator_Service.wsdl" MetadataType="Wsdl" ID="a54dac59-30ef-4bc7-aeca-f9d4de1be559" SourceId="1" SourceUrl="https://localhost:44399/Shape_Generator_Service.asmx?wsdl" />
+    <MetadataFile FileName="Shape_Generator_Service.disco" MetadataType="Disco" ID="f27564a8-d4b9-4f42-8acf-d6c559e42780" SourceId="1" SourceUrl="https://localhost:44399/Shape_Generator_Service.asmx?disco" />
+    <MetadataFile FileName="Shape_Generator_Service.wsdl" MetadataType="Wsdl" ID="0f40e044-15c2-496c-beba-8c12b841c38e" SourceId="1" SourceUrl="https://localhost:44399/Shape_Generator_Service.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
