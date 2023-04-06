@@ -38,6 +38,81 @@ namespace Braille_Shape_Generator_Client.ShapeGeneratorService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Square", ReplyAction="*")]
         System.Threading.Tasks.Task<double> SquareAsync(double length);
+        
+        // CODEGEN: Generating message contract since element name number from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetBrailleDots", ReplyAction="*")]
+        Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse GetBrailleDots(Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetBrailleDots", ReplyAction="*")]
+        System.Threading.Tasks.Task<Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse> GetBrailleDotsAsync(Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBrailleDotsRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBrailleDots", Namespace="http://tempuri.org/", Order=0)]
+        public Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequestBody Body;
+        
+        public GetBrailleDotsRequest() {
+        }
+        
+        public GetBrailleDotsRequest(Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBrailleDotsRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string number;
+        
+        public GetBrailleDotsRequestBody() {
+        }
+        
+        public GetBrailleDotsRequestBody(string number) {
+            this.number = number;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBrailleDotsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBrailleDotsResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponseBody Body;
+        
+        public GetBrailleDotsResponse() {
+        }
+        
+        public GetBrailleDotsResponse(Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBrailleDotsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int GetBrailleDotsResult;
+        
+        public GetBrailleDotsResponseBody() {
+        }
+        
+        public GetBrailleDotsResponseBody(int GetBrailleDotsResult) {
+            this.GetBrailleDotsResult = GetBrailleDotsResult;
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +172,31 @@ namespace Braille_Shape_Generator_Client.ShapeGeneratorService {
         
         public System.Threading.Tasks.Task<double> SquareAsync(double length) {
             return base.Channel.SquareAsync(length);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap.GetBrailleDots(Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest request) {
+            return base.Channel.GetBrailleDots(request);
+        }
+        
+        public int GetBrailleDots(string number) {
+            Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest inValue = new Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest();
+            inValue.Body = new Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequestBody();
+            inValue.Body.number = number;
+            Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse retVal = ((Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap)(this)).GetBrailleDots(inValue);
+            return retVal.Body.GetBrailleDotsResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse> Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap.GetBrailleDotsAsync(Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest request) {
+            return base.Channel.GetBrailleDotsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse> GetBrailleDotsAsync(string number) {
+            Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest inValue = new Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequest();
+            inValue.Body = new Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsRequestBody();
+            inValue.Body.number = number;
+            return ((Braille_Shape_Generator_Client.ShapeGeneratorService.Shape_Generator_ServiceSoap)(this)).GetBrailleDotsAsync(inValue);
         }
     }
 }
