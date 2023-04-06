@@ -72,9 +72,26 @@ namespace Braille_Shape_Generator_Client
             }
         }
 
+        //Number
         protected void Button5_Click(object sender, EventArgs e)
         {
-            Label10.Text = "This is the character generating section :D";
+            /*
+               +++++++++ NUMBER GENERATOR +++++++++
+                Uses the "ShapeGeneratorService"
+
+           Tasks: 
+               
+               - [x] Communication with the service
+               - [x] Calculating the number of dots
+               - [ ] Generating the braille numbers
+            */
+            // COMPLETED 1st 2 tasks by Himasha Gayathri on 04/06/2023
+
+            ShapeGeneratorService.Shape_Generator_ServiceSoapClient client = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
+            string selectedNumber = CharactersDropDownList2.SelectedValue;
+            // Call the GetBrailleDots method in the web service and pass in the selected number from the drop-down list
+            int Label11 = client.GetBrailleDots(selectedNumber);
+            Label12.Text = Label11.ToString();
         }
     }
 }
