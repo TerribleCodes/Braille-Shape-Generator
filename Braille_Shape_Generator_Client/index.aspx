@@ -371,7 +371,14 @@ Inherits="Braille_Shape_Generator_Client.index" %>
         </table>
       </div>
       <div class="auto-style3">
-        <asp:Label ID="Label10" runat="server"></asp:Label>
+        <asp:Label ID="Label10" runat="server"></asp:Label> &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp;  
+          <%--++ Added two labels by Himasha Gayathri 04/06/2023 ++--%>
+          <asp:Label ID="Label11" runat="server" Text="Number of dots required:"></asp:Label>&nbsp; &nbsp;   
+          <asp:Label ID="Label12" runat="server" ></asp:Label>
       </div>
     </form>
   </body>
