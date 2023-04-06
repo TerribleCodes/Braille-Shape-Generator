@@ -183,16 +183,18 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 <asp:ListItem> X </asp:ListItem>
                 <asp:ListItem> Y </asp:ListItem>
                 <asp:ListItem> Z </asp:ListItem>
-                <asp:ListItem> 0 </asp:ListItem>
-                <asp:ListItem> 1 </asp:ListItem>
-                <asp:ListItem> 2 </asp:ListItem>
-                <asp:ListItem> 3 </asp:ListItem>
-                <asp:ListItem> 4 </asp:ListItem>
-                <asp:ListItem> 5 </asp:ListItem>
-                <asp:ListItem> 6 </asp:ListItem>
-                <asp:ListItem> 7 </asp:ListItem>
-                <asp:ListItem> 8 </asp:ListItem>
-                <asp:ListItem> 9 </asp:ListItem>
+                  <%--++ Edited the DropDownList by Himasha Gayathri on 04/06/2023 ++--%>
+                <asp:ListItem Text="0" Value="0"></asp:ListItem>
+                <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5" Value="5"></asp:ListItem>
+                <asp:ListItem Text="6" Value="6"></asp:ListItem>
+                <asp:ListItem Text="7" Value="7"></asp:ListItem>
+                <asp:ListItem Text="8" Value="8"></asp:ListItem>
+                <asp:ListItem Text="9" Value="9"></asp:ListItem>
+
               </asp:DropDownList>
             </td>
             <td>
