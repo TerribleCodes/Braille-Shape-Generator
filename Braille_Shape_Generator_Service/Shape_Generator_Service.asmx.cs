@@ -43,10 +43,53 @@ namespace Braille_Shape_Generator_Service
             return length * length;
         }
 
-        // Do the Letter Generation
-
-
         // Do the Number Generation
+        [WebMethod]
+        public int GetBrailleDots(string number)
+        {
+            int dots = 0;
+            switch (number)
+            {
+                case "0":
+                    dots = 3;
+                    break;
+                case "1":
+                    dots = 1;
+                    break;
+                case "2":
+                    dots = 2;
+                    break;
+                case "3":
+                    dots = 2;
+                    break;
+                case "4":
+                    dots = 3;
+                    break;
+                case "5":
+                    dots = 2;
+                    break;
+                case "6":
+                    dots = 3;
+                    break;
+                case "7":
+                    dots = 4;
+                    break;
+                case "8":
+                    dots = 3;
+                    break;
+                case "9":
+                    dots = 2;
+                    break;
+                default:
+                    dots = 0;
+                    break;
+            }
+            return dots;
+        }
+
+
+
+        // Do the Letter Generation
 
 
     }
