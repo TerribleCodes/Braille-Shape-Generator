@@ -337,6 +337,9 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Text="Reset"
               />
               &nbsp;
+                <%-- +++ Removed the Print button by Himasha Gayathri on
+              04/06/2023 +++ --%>
+                <%--++ 
               <asp:Button
                 ID="Button8"
                 runat="server"
@@ -344,7 +347,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Font-Names="Montserrat Alternates SemiBold"
                 Font-Size="Medium"
                 Text="Print"
-              />
+              />++--%>
             </td>
             <td>
               <asp:TextBox
