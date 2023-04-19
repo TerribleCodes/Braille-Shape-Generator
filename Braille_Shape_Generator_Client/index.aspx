@@ -156,33 +156,34 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Height="25px"
                 Width="152px"
               >
+                <%--++ Edited the DropDownList by Nalitha Fernando on 04/13/2023 ++--%>
                 <asp:ListItem> Select a Character </asp:ListItem>
-                <asp:ListItem> A </asp:ListItem>
-                <asp:ListItem> B </asp:ListItem>
-                <asp:ListItem> C </asp:ListItem>
-                <asp:ListItem> D </asp:ListItem>
-                <asp:ListItem> E </asp:ListItem>
-                <asp:ListItem> F </asp:ListItem>
-                <asp:ListItem> G </asp:ListItem>
-                <asp:ListItem> H </asp:ListItem>
-                <asp:ListItem> I </asp:ListItem>
-                <asp:ListItem> J </asp:ListItem>
-                <asp:ListItem> K </asp:ListItem>
-                <asp:ListItem> L </asp:ListItem>
-                <asp:ListItem> M </asp:ListItem>
-                <asp:ListItem> N </asp:ListItem>
-                <asp:ListItem> O </asp:ListItem>
-                <asp:ListItem> P </asp:ListItem>
-                <asp:ListItem> Q </asp:ListItem>
-                <asp:ListItem> R </asp:ListItem>
-                <asp:ListItem> S </asp:ListItem>
-                <asp:ListItem> T </asp:ListItem>
-                <asp:ListItem> U </asp:ListItem>
-                <asp:ListItem> V </asp:ListItem>
-                <asp:ListItem> W </asp:ListItem>
-                <asp:ListItem> X </asp:ListItem>
-                <asp:ListItem> Y </asp:ListItem>
-                <asp:ListItem> Z </asp:ListItem>
+                <asp:ListItem Text = "A" Value = "A"></asp:ListItem>
+                <asp:ListItem Text = "B" Value = "B"></asp:ListItem>
+                <asp:ListItem Text = "C" Value = "C"></asp:ListItem>
+                <asp:ListItem Text = "D" Value = "D"></asp:ListItem>
+                <asp:ListItem Text = "E" Value = "E"></asp:ListItem>
+                <asp:ListItem Text = "F" Value = "F"></asp:ListItem>
+                <asp:ListItem Text = "G" Value = "G"></asp:ListItem>
+                <asp:ListItem Text = "H" Value = "H"></asp:ListItem>
+                <asp:ListItem Text = "I" Value = "I"></asp:ListItem>
+                <asp:ListItem Text = "J" Value = "J"></asp:ListItem>
+                <asp:ListItem Text = "K" Value = "K"></asp:ListItem>
+                <asp:ListItem Text = "L" Value = "L"></asp:ListItem>
+                <asp:ListItem Text = "M" Value = "M"></asp:ListItem>
+                <asp:ListItem Text = "N" Value = "N"></asp:ListItem>
+                <asp:ListItem Text = "O" Value = "O"></asp:ListItem>
+                <asp:ListItem Text = "P" Value = "P"></asp:ListItem>
+                <asp:ListItem Text = "Q" Value = "Q"></asp:ListItem>
+                <asp:ListItem Text = "R" Value = "R"></asp:ListItem>
+                <asp:ListItem Text = "S" Value = "S"></asp:ListItem>
+                <asp:ListItem Text = "T" Value = "T"></asp:ListItem>
+                <asp:ListItem Text = "U" Value = "U"></asp:ListItem>
+                <asp:ListItem Text = "V" Value = "V"></asp:ListItem>
+                <asp:ListItem Text = "W" Value = "W"></asp:ListItem>
+                <asp:ListItem Text = "X" Value = "X"></asp:ListItem>
+                <asp:ListItem Text = "Y" Value = "Y"></asp:ListItem>
+                <asp:ListItem Text = "Z" Value = "Z"></asp:ListItem>
                   <%--++ Edited the DropDownList by Himasha Gayathri on 04/06/2023 ++--%>
                 <asp:ListItem Text="0" Value="0"></asp:ListItem>
                 <asp:ListItem Text="1" Value="1"></asp:ListItem>
@@ -381,7 +382,8 @@ Inherits="Braille_Shape_Generator_Client.index" %>
           &nbsp; &nbsp; &nbsp; &nbsp;  
           <%--++ Added two labels by Himasha Gayathri 04/06/2023 ++--%>
           <asp:Label ID="Label11" runat="server" Text="Number of dots required:"></asp:Label>&nbsp; &nbsp;   
-          <asp:Label ID="Label12" runat="server" ></asp:Label>
+          <asp:Label ID="Label12" runat="server" ></asp:Label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         
       </div>
     </form>
   </body>

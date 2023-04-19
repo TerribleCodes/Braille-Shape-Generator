@@ -92,6 +92,12 @@ namespace Braille_Shape_Generator_Client
             // Call the GetBrailleDots method in the web service and pass in the selected number from the drop-down list
             int Label11 = client.GetBrailleDots(selectedNumber);
             Label12.Text = Label11.ToString();
+
+            ShapeGeneratorService.Shape_Generator_ServiceSoapClient client1 = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
+            string selectedLetter = CharactersDropDownList2.SelectedValue;
+            // Call the GetBrailleDotsLetters method in the web service and pass in the selected number from the drop-down list
+            int Label13 = client.GetBrailleDotsLetters(selectedLetter);
+            Label12.Text = Label13.ToString();
         }
     }
 }

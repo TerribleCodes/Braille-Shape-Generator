@@ -74,6 +74,20 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetBrailleDotsLetters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="letter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBrailleDotsLettersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBrailleDotsLettersResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="CircleSoapIn">
@@ -106,6 +120,12 @@
   <wsdl:message name="GetBrailleDotsSoapOut">
     <wsdl:part name="parameters" element="tns:GetBrailleDotsResponse" />
   </wsdl:message>
+  <wsdl:message name="GetBrailleDotsLettersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBrailleDotsLetters" />
+  </wsdl:message>
+  <wsdl:message name="GetBrailleDotsLettersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBrailleDotsLettersResponse" />
+  </wsdl:message>
   <wsdl:portType name="Shape_Generator_ServiceSoap">
     <wsdl:operation name="Circle">
       <wsdl:input message="tns:CircleSoapIn" />
@@ -126,6 +146,10 @@
     <wsdl:operation name="GetBrailleDots">
       <wsdl:input message="tns:GetBrailleDotsSoapIn" />
       <wsdl:output message="tns:GetBrailleDotsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBrailleDotsLetters">
+      <wsdl:input message="tns:GetBrailleDotsLettersSoapIn" />
+      <wsdl:output message="tns:GetBrailleDotsLettersSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="Shape_Generator_ServiceSoap" type="tns:Shape_Generator_ServiceSoap">
@@ -175,6 +199,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetBrailleDotsLetters">
+      <soap:operation soapAction="http://tempuri.org/GetBrailleDotsLetters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="Shape_Generator_ServiceSoap12" type="tns:Shape_Generator_ServiceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -216,6 +249,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetBrailleDots">
       <soap12:operation soapAction="http://tempuri.org/GetBrailleDots" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBrailleDotsLetters">
+      <soap12:operation soapAction="http://tempuri.org/GetBrailleDotsLetters" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

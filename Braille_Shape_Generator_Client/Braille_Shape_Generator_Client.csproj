@@ -77,6 +77,9 @@
     <Content Include="Connected Services\ShapeGeneratorService\Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ShapeGeneratorService\Braille_Shape_Generator_Client.ShapeGeneratorService.GetBrailleDotsLettersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ShapeGeneratorService\Shape_Generator_Service.disco" />
     <None Include="Connected Services\ShapeGeneratorService\configuration91.svcinfo" />
     <None Include="Connected Services\ShapeGeneratorService\configuration.svcinfo" />

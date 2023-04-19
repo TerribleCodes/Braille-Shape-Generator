@@ -88,9 +88,123 @@ namespace Braille_Shape_Generator_Service
         }
 
 
+        [WebMethod]
+        public int GetBrailleDotsLetters(string letter)
+        {
+            int dots = 0;
+            switch (letter)
+            {
+                case "A":
+                    dots = 1;
+                    break;
 
-        // Do the Letter Generation
+                case "B":
+                    dots = 2;
+                    break;
 
+                case "C":
+                    dots = 2;
+                    break;
 
+                case "D":
+                    dots = 3;
+                    break;
+
+                case "E":
+                    dots = 2;
+                    break;
+
+                case "F":
+                    dots = 3;
+                    break;
+
+                case "G":
+                    dots = 4;
+                    break;
+
+                case "H":
+                    dots = 3;
+                    break;
+
+                case "I":
+                    dots = 2;
+                    break;
+
+                case "J":
+                    dots = 3;
+                    break;
+
+                case "K":
+                    dots = 2;
+                    break;
+
+                case "L":
+                    dots = 3;
+                    break;
+
+                case "M":
+                    dots = 3;
+                    break;
+
+                case "N":
+                    dots = 4;
+                    break;
+
+                case "O":
+                    dots = 3;
+                    break;
+
+                case "P":
+                    dots = 4;
+                    break;
+
+                case "Q":
+                    dots = 5;
+                    break;
+
+                case "R":
+                    dots = 4;
+                    break;
+
+                case "S":
+                    dots = 3;
+                    break;
+
+                case "T":
+                    dots = 4;
+                    break;
+
+                case "U":
+                    dots = 3;
+                    break;
+
+                case "V":
+                    dots = 4;
+                    break;
+
+                case "W":
+                    dots = 4;
+                    break;
+
+                case "X":
+                    dots = 4;
+                    break;
+
+                case "Y":
+                    dots = 5;
+                    break;
+
+                case "Z":
+                    dots = 4;
+                    break;
+
+                default:
+                    dots = 0;
+                    break;
+            }
+            return dots;
+        }
     }
 }
+
+        // Do the Letter Generation
