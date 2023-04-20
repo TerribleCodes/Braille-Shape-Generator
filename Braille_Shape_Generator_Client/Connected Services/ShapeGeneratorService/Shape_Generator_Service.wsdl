@@ -74,6 +74,21 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetNumbers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNumbersResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="GetBrailleDotsLetters">
         <s:complexType>
           <s:sequence>
@@ -120,6 +135,12 @@
   <wsdl:message name="GetBrailleDotsSoapOut">
     <wsdl:part name="parameters" element="tns:GetBrailleDotsResponse" />
   </wsdl:message>
+  <wsdl:message name="GetNumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNumbers" />
+  </wsdl:message>
+  <wsdl:message name="GetNumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNumbersResponse" />
+  </wsdl:message>
   <wsdl:message name="GetBrailleDotsLettersSoapIn">
     <wsdl:part name="parameters" element="tns:GetBrailleDotsLetters" />
   </wsdl:message>
@@ -146,6 +167,10 @@
     <wsdl:operation name="GetBrailleDots">
       <wsdl:input message="tns:GetBrailleDotsSoapIn" />
       <wsdl:output message="tns:GetBrailleDotsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumbers">
+      <wsdl:input message="tns:GetNumbersSoapIn" />
+      <wsdl:output message="tns:GetNumbersSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetBrailleDotsLetters">
       <wsdl:input message="tns:GetBrailleDotsLettersSoapIn" />
@@ -192,6 +217,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetBrailleDots">
       <soap:operation soapAction="http://tempuri.org/GetBrailleDots" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumbers">
+      <soap:operation soapAction="http://tempuri.org/GetNumbers" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -249,6 +283,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetBrailleDots">
       <soap12:operation soapAction="http://tempuri.org/GetBrailleDots" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumbers">
+      <soap12:operation soapAction="http://tempuri.org/GetNumbers" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

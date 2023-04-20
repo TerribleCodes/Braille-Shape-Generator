@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Services;
 
@@ -44,9 +45,25 @@ namespace Braille_Shape_Generator_Service
         }
 
         // Do the Number Generation
-        [WebMethod]
+        [WebMethod (EnableSession=true)]
         public int GetBrailleDots(string number)
         {
+
+            List<String> numbers;
+
+            if (Session["NUMBERS"]==null)
+            {
+                numbers = new List<string>();
+            }
+            else
+            {
+                numbers = (List<string>)Session["NUMBERS"];
+            }
+            string strRecentNumbers = number;
+            numbers.Add(strRecentNumbers);
+            Session["NUMBERS"] = numbers;
+
+
             int dots = 0;
             switch (number)
             {
@@ -85,6 +102,21 @@ namespace Braille_Shape_Generator_Service
                     break;
             }
             return dots;
+        }
+
+        [WebMethod(EnableSession = true)]
+        public List<string> GetNumbers()
+        {
+            if (Session["NUMBERS"] == null)
+            {
+                List<string> numbers = new List<string>();
+                numbers.Add("You have not performed anything");
+                return numbers;
+            }
+            else
+            {
+                return (List<string>)Session["NUMBERS"];
+            }
         }
 
 

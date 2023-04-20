@@ -99,5 +99,11 @@ namespace Braille_Shape_Generator_Client
             int Label13 = client.GetBrailleDotsLetters(selectedLetter);
             Label12.Text = Label13.ToString();
         }
+
+        protected void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+            ShapeGeneratorService.Shape_Generator_ServiceSoapClient client = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
+            client.GetNumbers();
+        }
     }
 }
