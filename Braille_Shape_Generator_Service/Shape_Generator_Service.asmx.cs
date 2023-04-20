@@ -20,38 +20,101 @@ namespace Braille_Shape_Generator_Service
 
         // Edited By Madawa De Silva 28.03.2023
 
-        [WebMethod]
+        [WebMethod (EnableSession =true)]
         public double Circle(double radius)
         {
-            return (Math.Round(Math.PI * radius * radius));
+            double CircleDots = (Math.Round(Math.PI * radius * radius));
+
+            //Generate Recent Activities for Circles
+            List<String> circles;
+
+            if (Session["CIRCLE"] == null)
+            {
+                circles = new List<string>();
+            }
+            else
+            {
+                circles = (List<string>)Session["CIRCLE"];
+            }
+            string strRecentCircle = CircleDots.ToString();
+            circles.Add(strRecentCircle);
+            Session["CIRCLE"] = circles;
+
+         
+            return CircleDots;
+        }
+        [WebMethod(EnableSession = true)]
+        public List<string> GetCircle()
+        {
+            if (Session["CIRCLE"] == null)
+            {
+                List<string> circles = new List<string>();
+                circles.Add("You have not performed anything");
+                return circles;
+            }
+            else
+            {
+                return (List<string>)Session["CIRCLE"];
+            }
         }
 
         [WebMethod]
         public double Triangle(double height, double width)
         {
-            return Math.Round(0.5 *height * width);
-        }
+           double TriangleDots= Math.Round(0.5 * height * width);
+            //Generate Recent Activities for Circles
+            List<String> triangles;
 
+            if (Session["TRIANGLE"] == null)
+            {
+                triangles = new List<string>();
+            }
+            else
+            {
+                triangles = (List<string>)Session["TRIANGLE"];
+            }
+            string strRecentTriangle =TriangleDots.ToString();
+            triangles.Add(strRecentTriangle);
+            Session["TRIANGLE"] = triangles;
+
+            return TriangleDots;
+        }
+        [WebMethod(EnableSession = true)]
+        public List<string> GetTriangle()
+        {
+            if (Session["TRIANGLE"] == null)
+            {
+                List<string> triangles = new List<string>();
+                triangles.Add("You have not performed anything");
+                return triangles;
+            }
+            else
+            {
+                return (List<string>)Session["TRIANGLE"];
+            }
+        }
         [WebMethod]
         public double Rectangle(double width, double height)
         {
-            return width * height;
+            double RecDots= Math.Round(width * height);
+            return RecDots;
         }
 
         [WebMethod]
         public double Square(double length)
         {
-            return length * length;
+            double SqDots= Math.Sqrt(length);
+            return SqDots;
         }
 
         // Do the Number Generation
-        [WebMethod (EnableSession=true)]
+        [WebMethod(EnableSession = true)]
         public int GetBrailleDots(string number)
         {
-
+            //Generate Recent Activities for Numbers
             List<String> numbers;
 
-            if (Session["NUMBERS"]==null)
+            if (Session["NUMBERS"] == null)
             {
                 numbers = new List<string>();
             }
@@ -119,10 +182,26 @@ namespace Braille_Shape_Generator_Service
             }
         }
 
-
-        [WebMethod]
+        //Letter Generation
+        [WebMethod (EnableSession=true)]
         public int GetBrailleDotsLetters(string letter)
         {
+
+            //Generate Recent Activities for Letters
+            List<String> letters;
+
+            if (Session["LETTERS"] == null)
+            {
+                letters = new List<string>();
+            }
+            else
+            {
+                letters = (List<string>)Session["LETTERS"];
+            }
+            string strRecentLetters = letter;
+            letters.Add(strRecentLetters);
+            Session["NUMBERS"] = letters;
+
             int dots = 0;
             switch (letter)
             {
@@ -235,6 +314,20 @@ namespace Braille_Shape_Generator_Service
                     break;
             }
             return dots;
+        }
+        [WebMethod(EnableSession = true)]
+        public List<string> GetLetters()
+        {
+            if (Session["LETTERS"] == null)
+            {
+                List<string> letters = new List<string>();
+                letters.Add("You have not performed anything");
+                return letters;
+            }
+            else
+            {
+                return (List<string>)Session["LETTERS"];
+            }
         }
     }
 }

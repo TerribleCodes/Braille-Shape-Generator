@@ -102,8 +102,16 @@ namespace Braille_Shape_Generator_Client
 
         protected void TextBox4_TextChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void TextBox4_TextChanged1(object sender, EventArgs e)
+        {
             ShapeGeneratorService.Shape_Generator_ServiceSoapClient client = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
             client.GetNumbers();
+            client.GetLetters();
+            client.GetCircle();
+            client.GetTriangle();
         }
     }
 }

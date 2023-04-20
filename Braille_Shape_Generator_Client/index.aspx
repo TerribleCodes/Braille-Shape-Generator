@@ -199,11 +199,10 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               </asp:DropDownList>
             </td>
             <td>
-              <asp:TextBox
-                ID="TextBox4"
-                runat="server"
-                Width="318px"
-              ></asp:TextBox>
+                <asp:TextBox
+                    ID="TextBox4"
+                    runat="server"
+                    Width="318px" OnTextChanged="TextBox4_TextChanged1"></asp:TextBox>
             </td>
           </tr>
           <tr>

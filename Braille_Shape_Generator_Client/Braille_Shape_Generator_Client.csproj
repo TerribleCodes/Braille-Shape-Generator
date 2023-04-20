@@ -86,6 +86,15 @@
     <Content Include="Connected Services\ShapeGeneratorService\Braille_Shape_Generator_Client.ShapeGeneratorService.GetNumbersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ShapeGeneratorService\Braille_Shape_Generator_Client.ShapeGeneratorService.GetLettersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ShapeGeneratorService\Braille_Shape_Generator_Client.ShapeGeneratorService.GetCircleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ShapeGeneratorService\Braille_Shape_Generator_Client.ShapeGeneratorService.GetTriangleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ShapeGeneratorService\Shape_Generator_Service.disco" />
     <None Include="Connected Services\ShapeGeneratorService\configuration91.svcinfo" />
     <None Include="Connected Services\ShapeGeneratorService\configuration.svcinfo" />
