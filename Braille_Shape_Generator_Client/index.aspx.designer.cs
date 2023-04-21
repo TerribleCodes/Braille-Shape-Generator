@@ -96,15 +96,6 @@ namespace Braille_Shape_Generator_Client
         protected global::System.Web.UI.WebControls.DropDownList CharactersDropDownList2;
 
         /// <summary>
-        /// TextBox4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
-
-        /// <summary>
         /// Label7 control.
         /// </summary>
         /// <remarks>
@@ -141,13 +132,13 @@ namespace Braille_Shape_Generator_Client
         protected global::System.Web.UI.WebControls.Button Uppercase;
 
         /// <summary>
-        /// TextBox5 control.
+        /// Madawa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.GridView Madawa;
 
         /// <summary>
         /// Label8 control.
@@ -166,15 +157,6 @@ namespace Braille_Shape_Generator_Client
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox EnterHeight;
-
-        /// <summary>
-        /// TextBox6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
 
         /// <summary>
         /// Label9 control.
@@ -229,15 +211,6 @@ namespace Braille_Shape_Generator_Client
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button6;
-
-        /// <summary>
-        /// TextBox7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
 
         /// <summary>
         /// Label10 control.

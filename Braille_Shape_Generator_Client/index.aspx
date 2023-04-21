@@ -198,12 +198,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
 
               </asp:DropDownList>
             </td>
-            <td>
-                <asp:TextBox
-                    ID="TextBox4"
-                    runat="server"
-                    Width="318px" OnTextChanged="TextBox4_TextChanged1"></asp:TextBox>
-            </td>
+           
           </tr>
           <tr>
             <td class="auto-style9">
@@ -235,12 +230,8 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Text="Upper Case"
               />
             </td>
-            <td>
-              <asp:TextBox
-                ID="TextBox5"
-                runat="server"
-                Width="318px"
-              ></asp:TextBox>
+            <td colspan="2">
+                <asp:GridView ID="Madawa" runat="server"></asp:GridView>
             </td>
           </tr>
           <tr>
@@ -261,11 +252,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
             </td>
             <td>Filler</td>
             <td>
-              <asp:TextBox
-                ID="TextBox6"
-                runat="server"
-                Width="318px"
-              ></asp:TextBox>
+              
             </td>
           </tr>
           <tr>
@@ -350,11 +337,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               />++--%>
             </td>
             <td>
-              <asp:TextBox
-                ID="TextBox7"
-                runat="server"
-                Width="318px"
-              ></asp:TextBox>
+              
             </td>
           </tr>
           <tr>

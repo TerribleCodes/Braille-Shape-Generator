@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -98,20 +99,16 @@ namespace Braille_Shape_Generator_Client
             // Call the GetBrailleDotsLetters method in the web service and pass in the selected number from the drop-down list
             int Label13 = client.GetBrailleDotsLetters(selectedLetter);
             Label12.Text = Label13.ToString();
+
+            Madawa.DataSource = client.GetCircle();
+            Madawa.DataSource = client1.GetLetters();
+            Madawa.DataSource = client1.GetNumbers();
+            Madawa.DataSource = client1.GetTriangle();
+            Madawa.DataBind();
+
+
         }
 
-        protected void TextBox4_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void TextBox4_TextChanged1(object sender, EventArgs e)
-        {
-            ShapeGeneratorService.Shape_Generator_ServiceSoapClient client = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
-            client.GetNumbers();
-            client.GetLetters();
-            client.GetCircle();
-            client.GetTriangle();
-        }
+       
     }
 }
