@@ -121,15 +121,16 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:DropDownList
                 ID="shape_drop_down"
                 runat="server"
-                Height="25px"
-                Width="152px"
                 onchange="EnableDisableTextBox(this)"
+                Height="30px"
+                Width="180px"
+                CssClass="options"
               >
-                <asp:ListItem value="select"> Select a shape </asp:ListItem>
-                <asp:ListItem value="square"> Square </asp:ListItem>
-                <asp:ListItem value="rectangle"> Rectangle </asp:ListItem>
-                <asp:ListItem value="triangle"> Triangle </asp:ListItem>
-                <asp:ListItem value="circle"> Circle </asp:ListItem>
+                <asp:ListItem  value="select"> Select a Shape </asp:ListItem>
+                <asp:ListItem  value="square"> Square </asp:ListItem>
+                <asp:ListItem  value="rectangle"> Rectangle </asp:ListItem>
+                <asp:ListItem  value="triangle"> Triangle </asp:ListItem>
+                <asp:ListItem  value="circle"> Circle </asp:ListItem>
                 <%-- +++ Removed additional shapes by Madawa De Siva on
                 04/02/2023@9:35AM +++ --%> <%--<asp:ListItem>
                   Oval
@@ -153,8 +154,9 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:DropDownList
                 ID="CharactersDropDownList2"
                 runat="server"
-                Height="25px"
-                Width="152px"
+                Height="30px"
+                Width="240px"
+                CssClass="options"
               >
                 <%--++ Edited the DropDownList by Nalitha Fernando on 04/13/2023 ++--%>
                 <asp:ListItem> Select a Character </asp:ListItem>
@@ -220,14 +222,14 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 ID="Lowercase"
                 runat="server"
                 Font-Names="Montserrat Alternates SemiBold"
-                Text="Lower Case"
+                Text="Lower Case" CssClass="btn2"
               />
               &nbsp;
               <asp:Button
                 ID="Uppercase"
                 runat="server"
                 Font-Names="Montserrat Alternates SemiBold"
-                Text="Upper Case"
+                Text="Upper Case" CssClass="btn2"
               />
             </td>
             <td colspan="2">
@@ -281,7 +283,8 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Font-Names="Montserrat Alternates SemiBold"
                 Font-Size="Medium"
                 Text="Generate"
-                OnClick="Button3_Click1"
+                OnClick="Button3_Click1" 
+                CssClass="btn"
               />
               &nbsp;
               <asp:Button
@@ -290,7 +293,8 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Font-Bold="True"
                 Font-Names="Montserrat Alternates SemiBold"
                 Font-Size="Medium"
-                Text="Reset"
+                Text="Reset" 
+                CssClass="btn"
               />
               &nbsp; <%-- +++ Removed the Print button by Madawa De Silva on
               04/02/2023@9:40AM as the Print and Generate buttons perform the
@@ -311,7 +315,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Font-Names="Montserrat Alternates SemiBold"
                 Font-Size="Medium"
                 Text="Generate"
-                OnClick="Button5_Click"
+                OnClick="Button5_Click" CssClass="btn"
               />
               &nbsp;
               <asp:Button
@@ -321,7 +325,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Font-Bold="True"
                 Font-Names="Montserrat Alternates SemiBold"
                 Font-Size="Medium"
-                Text="Reset"
+                Text="Reset" CssClass="btn"
               />
               &nbsp;
                 <%-- +++ Removed the Print button by Himasha Gayathri on
