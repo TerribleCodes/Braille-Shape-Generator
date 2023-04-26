@@ -44,12 +44,6 @@ Inherits="Braille_Shape_Generator_Client.index" %>
       .auto-style9 {
         width: 550px;
       }
-      .auto-style10 {
-        margin-left: 16px;
-      }
-      .auto-style11 {
-        margin-left: 18px;
-      }
       .auto-style12 {
         width: 550px;
         height: 68px;
@@ -57,6 +51,17 @@ Inherits="Braille_Shape_Generator_Client.index" %>
       .auto-style13 {
         height: 68px;
       }
+        .auto-style14 {
+            height: 63px;
+            width: 550px;
+        }
+        .auto-style15 {
+            height: 63px;
+        }
+        .auto-style16 {
+            height: 56px;
+            width: 550px;
+        }
     </style>
   </head>
   <body style="height: 909px">
@@ -213,9 +218,10 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox
                 ID="EnterRadius"
                 runat="server"
-                CssClass="auto-style10"
+                CssClass="inputBox"
                 disabled="disabled"
               ></asp:TextBox>
+                <span class="ibspan1">Enter Radius</span>
             </td>
             <td class="auto-style9">
               <asp:Button
@@ -237,7 +243,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
             </td>
           </tr>
           <tr>
-            <td class="auto-style9">
+            <td class="auto-style14">
               <asp:Label
                 ID="Label8"
                 runat="server"
@@ -248,17 +254,18 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:TextBox
                 ID="EnterHeight"
                 runat="server"
-                CssClass="auto-style10"
+                CssClass="inputBox"
                 disabled="disabled"
               ></asp:TextBox>
+                <span class="ibspan2">Entert Height</span>
             </td>
-            <td>Filler</td>
-            <td>
+            <td class="auto-style15">Filler</td>
+            <td class="auto-style15">
               
             </td>
           </tr>
           <tr>
-            <td class="auto-style9">
+            <td class="auto-style16">
               <asp:Label
                 ID="Label9"
                 runat="server"
@@ -269,9 +276,10 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:TextBox
                 ID="EnterWidth"
                 runat="server"
-                CssClass="auto-style11"
+                CssClass="inputBox"
                 disabled="disabled"
               ></asp:TextBox>
+                <span class="ibspan3">Enter Width</span>
             </td>
           </tr>
           <tr>
