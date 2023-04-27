@@ -25,14 +25,14 @@ Inherits="Braille_Shape_Generator_Client.index" %>
         height: 47px;
       }
       .auto-style2 {
-        height: 321px;
+        height: 480px;
       }
       .auto-style3 {
         height: 533px;
       }
       .auto-style4 {
         width: 100%;
-        height: 319px;
+        height: 440px;
       }
       .auto-style7 {
         height: 49px;
@@ -61,6 +61,13 @@ Inherits="Braille_Shape_Generator_Client.index" %>
         .auto-style16 {
             height: 56px;
             width: 550px;
+        }
+        .auto-style17 {
+            width: 550px;
+            height: 58px;
+        }
+        .auto-style18 {
+            height: 58px;
         }
     </style>
   </head>
@@ -119,8 +126,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:Label
                 ID="Label5"
                 runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Select Shape: "
+                Text="Select Shape: " CssClass="lb1"
               ></asp:Label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <asp:DropDownList
@@ -153,8 +159,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:Label
                 ID="Label6"
                 runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Select Character: "
+                Text="Select Character: " CssClass="lb1"
               ></asp:Label>
               <asp:DropDownList
                 ID="CharactersDropDownList2"
@@ -212,8 +217,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:Label
                 ID="Label7"
                 runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Enter Radius:"
+                Text="Enter Radius:" CssClass="lb1"
               ></asp:Label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox
                 ID="EnterRadius"
@@ -239,7 +243,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               />
             </td>
             <td colspan="2">
-                <asp:GridView ID="Madawa" runat="server"></asp:GridView>
+                <asp:GridView ID="Madawa" runat="server" Font-Names="Montserrat"></asp:GridView>
             </td>
           </tr>
           <tr>
@@ -247,8 +251,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:Label
                 ID="Label8"
                 runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Enter Height:"
+                Text="Enter Height:" CssClass="lb1"
               ></asp:Label>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <asp:TextBox
@@ -269,8 +272,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               <asp:Label
                 ID="Label9"
                 runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Enter Width:"
+                Text="Enter Width:" CssClass="lb1"
               ></asp:Label
               >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <asp:TextBox
@@ -283,7 +285,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
             </td>
           </tr>
           <tr>
-            <td class="auto-style9">
+            <td class="auto-style17">
               <asp:Button
                 ID="Button3"
                 runat="server"
@@ -315,7 +317,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Text="Print"
               />--%>
             </td>
-            <td class="auto-style9">
+            <td class="auto-style17">
               <asp:Button
                 ID="Button5"
                 runat="server"
@@ -348,7 +350,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 Text="Print"
               />++--%>
             </td>
-            <td>
+            <td class="auto-style18">
               
             </td>
           </tr>
@@ -369,14 +371,23 @@ Inherits="Braille_Shape_Generator_Client.index" %>
         </table>
       </div>
       <div class="auto-style3">
-        <asp:Label ID="Label10" runat="server"></asp:Label> &nbsp; &nbsp;
+          &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp;  
           <%--++ Added two labels by Himasha Gayathri 04/06/2023 ++--%>
-          <asp:Label ID="Label11" runat="server" Text="Number of dots required:"></asp:Label>&nbsp; &nbsp;   
-          <asp:Label ID="Label12" runat="server" ></asp:Label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;   
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         
+          <br />
+        <asp:Label ID="Label10" runat="server"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Label ID="Label11" runat="server" Text="Number of dots required:" CssClass="lb1" Font-Bold="True"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br />
+          <br />
+          <asp:Label ID="Label12" runat="server" ></asp:Label>
+          <br />
+          <br />
          
       </div>
     </form>
