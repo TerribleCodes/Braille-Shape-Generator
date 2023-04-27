@@ -21,14 +21,8 @@ Inherits="Braille_Shape_Generator_Client.index" %>
     <title>Braille Shape Generator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-      .auto-style1 {
-        height: 47px;
-      }
-      .auto-style2 {
-        height: 480px;
-      }
       .auto-style3 {
-        height: 533px;
+        height: 340px;
       }
       .auto-style4 {
         width: 100%;
@@ -73,7 +67,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
   </head>
   <body style="height: 909px">
     <form id="form1" runat="server">
-      <div class="auto-style1">
+      <div class="generaterdiv">
         <asp:Label
           ID="Label1"
           runat="server"
@@ -87,7 +81,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
         ></asp:Label>
       </div>
       <hr />
-      <div class="auto-style2">
+      <div class="generaterdiv">
         <table class="auto-style4">
           <tr>
             <td class="auto-style8">
