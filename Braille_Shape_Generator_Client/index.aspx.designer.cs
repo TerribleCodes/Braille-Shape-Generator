@@ -114,24 +114,6 @@ namespace Braille_Shape_Generator_Client
         protected global::System.Web.UI.WebControls.TextBox EnterRadius;
 
         /// <summary>
-        /// Lowercase control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Lowercase;
-
-        /// <summary>
-        /// Uppercase control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Uppercase;
-
-        /// <summary>
         /// Madawa control.
         /// </summary>
         /// <remarks>
@@ -229,14 +211,5 @@ namespace Braille_Shape_Generator_Client
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label11;
-
-        /// <summary>
-        /// Label12 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label12;
     }
 }

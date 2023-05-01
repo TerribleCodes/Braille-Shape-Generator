@@ -76,7 +76,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
           Font-Size="Larger"
           Height="40px"
           Align="center"
-          Text="Hima's Braille Shape Generator"
+          Text="Braille Shape Generator"
           Width="1498px"
         ></asp:Label>
       </div>
@@ -215,6 +215,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               ></asp:Label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox
                 ID="EnterRadius"
+                type="number"
                 runat="server"
                 CssClass="inputBox"
                 disabled="disabled"
@@ -222,19 +223,9 @@ Inherits="Braille_Shape_Generator_Client.index" %>
                 <span class="ibspan1">Enter Radius</span>
             </td>
             <td class="auto-style9">
-              <asp:Button
-                ID="Lowercase"
-                runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Lower Case" CssClass="btn2"
-              />
+              
               &nbsp;
-              <asp:Button
-                ID="Uppercase"
-                runat="server"
-                Font-Names="Montserrat Alternates SemiBold"
-                Text="Upper Case" CssClass="btn2"
-              />
+              
             </td>
             <td colspan="2">
                 <asp:GridView ID="Madawa" runat="server" Font-Names="Montserrat"></asp:GridView>
@@ -250,13 +241,14 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <asp:TextBox
                 ID="EnterHeight"
+                type="number"
                 runat="server"
                 CssClass="inputBox"
                 disabled="disabled"
               ></asp:TextBox>
                 <span class="ibspan2">Entert Height</span>
             </td>
-            <td class="auto-style15">Filler</td>
+            <td class="auto-style15"></td>
             <td class="auto-style15">
               
             </td>
@@ -271,6 +263,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <asp:TextBox
                 ID="EnterWidth"
+                type="number"
                 runat="server"
                 CssClass="inputBox"
                 disabled="disabled"
@@ -364,26 +357,15 @@ Inherits="Braille_Shape_Generator_Client.index" %>
           </tr>
         </table>
       </div>
-      <div class="auto-style3">
-          &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp;  
-          <%--++ Added two labels by Himasha Gayathri 04/06/2023 ++--%>
-          &nbsp; &nbsp;   
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-         
-          <br />
-        <asp:Label ID="Label10" runat="server"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Label ID="Label11" runat="server" Text="Number of dots required:" CssClass="lb1" Font-Bold="True"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <br />
-          <br />
-          <asp:Label ID="Label12" runat="server" ></asp:Label>
-          <br />
-          <br />
-         
-      </div>
+        <div>
+            <center>
+                <asp:Label ID="Label10" runat="server" CssClass="lb1" Font-Bold="True" Font-Size="32px"></asp:Label>
+                <br />
+                <hr />
+                <br />
+                <asp:Label ID="Label11" runat="server" CssClass="lb1" Font-Bold="True" Font-Size="32px"></asp:Label>
+            </center>
+        </div>
     </form>
   </body>
   <%-- +++ FrontEnd Shape Generator Validation +++ By Madawa De Silva on

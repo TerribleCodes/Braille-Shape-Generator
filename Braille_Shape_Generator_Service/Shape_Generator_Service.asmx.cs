@@ -17,13 +17,12 @@ namespace Braille_Shape_Generator_Service
     // [System.Web.Script.Services.ScriptService]
     public class Shape_Generator_Service : System.Web.Services.WebService
     {
-
         // Edited By Madawa De Silva 28.03.2023
 
         [WebMethod (EnableSession =true)]
         public double Circle(double radius)
         {
-            double CircleDots = (Math.Round(Math.PI * radius * radius));
+            double CircleDots = (Math.Round(Math.PI * 2 * radius));
 
             //Generate Recent Activities for Circles
             List<String> circles;
@@ -40,7 +39,6 @@ namespace Braille_Shape_Generator_Service
             circles.Add(strRecentCircle);
             Session["CIRCLE"] = circles;
 
-         
             return CircleDots;
         }
         [WebMethod(EnableSession = true)]
@@ -96,14 +94,14 @@ namespace Braille_Shape_Generator_Service
         [WebMethod]
         public double Rectangle(double width, double height)
         {
-            double RecDots= Math.Round(width * height);
+            double RecDots= (2*width)+(2*height);
             return RecDots;
         }
 
         [WebMethod]
         public double Square(double length)
         {
-            double SqDots= Math.Sqrt(length);
+            double SqDots= length*4;
             return SqDots;
         }
 
@@ -331,5 +329,3 @@ namespace Braille_Shape_Generator_Service
         }
     }
 }
-
-        // Do the Letter Generation
