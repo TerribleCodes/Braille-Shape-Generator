@@ -24,7 +24,7 @@ namespace Braille_Shape_Generator_Service
         {
             double CircleDots = (Math.Round(Math.PI * 2 * radius));
 
-            //Generate Recent Activities for Circles
+            //Generate Recent Activities for Circles (DDS)
             List<String> circles;
 
             if (Session["CIRCLE"] == null)
@@ -35,7 +35,7 @@ namespace Braille_Shape_Generator_Service
             {
                 circles = (List<string>)Session["CIRCLE"];
             }
-            string strRecentCircle = CircleDots.ToString();
+            string strRecentCircle ="Circle :"+ CircleDots.ToString();
             circles.Add(strRecentCircle);
             Session["CIRCLE"] = circles;
 
@@ -56,11 +56,11 @@ namespace Braille_Shape_Generator_Service
             }
         }
 
-        [WebMethod]
+        [WebMethod (EnableSession =true)]
         public double Triangle(double height, double width)
         {
            double TriangleDots= Math.Round(0.5 * height * width);
-            //Generate Recent Activities for Circles
+            //Generate Recent Activities for triangles
             List<String> triangles;
 
             if (Session["TRIANGLE"] == null)
@@ -71,7 +71,7 @@ namespace Braille_Shape_Generator_Service
             {
                 triangles = (List<string>)Session["TRIANGLE"];
             }
-            string strRecentTriangle =TriangleDots.ToString();
+            string strRecentTriangle ="Triangle :"+TriangleDots.ToString();
             triangles.Add(strRecentTriangle);
             Session["TRIANGLE"] = triangles;
 
@@ -91,14 +91,42 @@ namespace Braille_Shape_Generator_Service
                 return (List<string>)Session["TRIANGLE"];
             }
         }
-        [WebMethod]
+        [WebMethod (EnableSession =true)]
         public double Rectangle(double width, double height)
         {
             double RecDots= (2*width)+(2*height);
+            //Generate Recent Activities for 
+            List<String> rectangles;
+
+            if (Session["RECTANGLE"] == null)
+            {
+                rectangles = new List<string>();
+            }
+            else
+            {
+                rectangles = (List<string>)Session["RECTANGLE"];
+            }
+            string strRecentRectangle ="Width :"+ height.ToString() + " "+"Height :"+ width.ToString() + " "+"***# of Dots for Rectangle :"+ RecDots.ToString();
+            rectangles.Add(strRecentRectangle);
+            Session["RECTANGLE"] = rectangles;
             return RecDots;
         }
+        [WebMethod(EnableSession = true)]
+        public List<string> GetRectangle()
+        {
+            if (Session["RECTANGlE"] == null)
+            {
+                List<string> rectangles = new List<string>();
+                rectangles.Add("You have not performed anything");
+                return rectangles;
+            }
+            else
+            {
+                return (List<string>)Session["RECTANGLE"];
+            }
+        }
 
-        [WebMethod]
+        [WebMethod(EnableSession = true)]
         public double Square(double length)
         {
             double SqDots= length*4;

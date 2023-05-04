@@ -228,7 +228,7 @@ Inherits="Braille_Shape_Generator_Client.index" %>
               
             </td>
             <td colspan="2">
-                <asp:GridView ID="Madawa" runat="server" Font-Names="Montserrat"></asp:GridView>
+                <asp:GridView ID="Madawa" runat="server" Font-Names="Montserrat" OnSelectedIndexChanged="Madawa_SelectedIndexChanged"></asp:GridView>
             </td>
           </tr>
           <tr>

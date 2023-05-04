@@ -93,6 +93,10 @@ namespace Braille_Shape_Generator_Client
             {
                 Label10.Text = "Please select a shape or a Character";
             }
+            Madawa.DataSource = client.GetCircle();
+            Madawa.DataSource = client.GetTriangle();
+            Madawa.DataSource = client.GetRectangle();
+            Madawa.DataBind();
         }
 
         protected void Button5_Click(object sender, EventArgs e)
@@ -130,11 +134,16 @@ namespace Braille_Shape_Generator_Client
             // Nalitha start from here. Same approach.
 
 
-            Madawa.DataSource = client.GetCircle();
+            
             Madawa.DataSource = client1.GetLetters();
             Madawa.DataSource = client1.GetNumbers();
-            Madawa.DataSource = client1.GetTriangle();
+            
             Madawa.DataBind();
-        }      
+        }
+
+        protected void Madawa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
