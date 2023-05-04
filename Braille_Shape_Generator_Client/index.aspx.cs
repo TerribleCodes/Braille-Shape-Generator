@@ -114,30 +114,89 @@ namespace Braille_Shape_Generator_Client
             // COMPLETED 1st 2 tasks by Himasha Gayathri on 04/06/2023
 
             ShapeGeneratorService.Shape_Generator_ServiceSoapClient client = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
-            string selectedNumber = CharactersDropDownList2.SelectedValue;
-            // Call the GetBrailleDots method in the web service and pass in the selected number from the drop-down list
-            int num = client.GetBrailleDots(selectedNumber);
-            Label10.Text = "Number of Dots required for "+selectedNumber+" = "+num.ToString();
-            
-            // Hima's part. Continue the number generator. Change the characters if necessary idk.
-            if (selectedNumber=="0")
             {
-                Label11.Text = "**"+ "<br/>" + "--" + "<br/>" +"**";
+                // Call the GetBrailleDots method in the web service and pass in the selected number from the drop-down list
+                if (CharactersDropDownList2.SelectedValue == "0")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "1")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "2")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "3")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "4")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "5")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "6")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "* -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "7")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "* *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "8")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "9")
+                {
+                    int num1 = client.GetBrailleDots(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* -" + "<br/>" + "- -";
+                }
+
+
+
+
+                // Call the GetBrailleDotsLetters method in the web service and pass in the selected letter from the drop-down list
+                if (CharactersDropDownList2.SelectedValue == "A")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    // Nalitha start from here. Same approach.
+                }
             }
 
 
-            ShapeGeneratorService.Shape_Generator_ServiceSoapClient client1 = new ShapeGeneratorService.Shape_Generator_ServiceSoapClient();
-            string selectedLetter = CharactersDropDownList2.SelectedValue;
-            // Call the GetBrailleDotsLetters method in the web service and pass in the selected number from the drop-down list
-            int num1 = client.GetBrailleDotsLetters(selectedLetter);
-            Label10.Text = "Number of Dots required for "+selectedLetter+ " = " + num1.ToString();
-            // Nalitha start from here. Same approach.
 
 
-            
-            Madawa.DataSource = client1.GetLetters();
-            Madawa.DataSource = client1.GetNumbers();
-            
+
+
+            Madawa.DataSource = client.GetLetters();
+            Madawa.DataSource = client.GetNumbers();
+
             Madawa.DataBind();
         }
 
