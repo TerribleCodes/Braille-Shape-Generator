@@ -39,7 +39,19 @@ namespace Braille_Shape_Generator_Client
             {
                 double result = client.Square(Convert.ToDouble(EnterHeight.Text));
                 Label10.Text = "Number of dots required for the Square: "+result.ToString();
-                Label11.Text = "";
+                int Size = Convert.ToInt32(EnterHeight.Text);
+                StringBuilder sb = new StringBuilder("");
+                Console.WriteLine("Enter the size of the square: ");
+                Size = Convert.ToInt32(Console.ReadLine());
+
+                for (int row = 0; row < Size; row++)
+                {
+                    for (int column = 0; column < Size; column++)
+                    {
+                        sb.Append("*" + " ");
+                    }
+                    Label11.Text = sb.ToString();
+                }
             }
 
             // Rectangle
@@ -47,7 +59,21 @@ namespace Braille_Shape_Generator_Client
             {
                 double result = client.Rectangle(Convert.ToDouble(EnterHeight.Text), Convert.ToDouble(EnterWidth.Text));
                 Label10.Text = "Number of dots required for the Rectangle: " + result.ToString();
-                Label11.Text = "";
+                int height = Convert.ToInt32(EnterHeight.Text);
+                int width = Convert.ToInt32(EnterWidth.Text);
+                StringBuilder sb = new StringBuilder("");
+                for (int i = 1; i <= height; i++)
+                {
+                    for (int j = 1; j <= width; j++)
+                    {
+                        if ((i == 1 || i == height) || (j == 1 || j == width))
+                            sb.Append("*");
+                        else
+                            sb.Append(" ");
+                    }
+                    sb.Append("\n");
+                }
+                Label11.Text = sb.ToString();
             }
             
 
@@ -56,7 +82,22 @@ namespace Braille_Shape_Generator_Client
             {
                 double result = client.Triangle(Convert.ToDouble(EnterHeight.Text), Convert.ToDouble(EnterWidth.Text));
                 Label10.Text = "Number of dots required for the Triangle: "+result.ToString();
-                Label11.Text = "";
+                StringBuilder sb = new StringBuilder("");
+                int val = Convert.ToInt32(EnterHeight.Text);
+                int i, j, k;
+                for (i = 1; i <= val; i++)
+                {
+                    for (j = 1; j <= val - i; j++)
+                    {
+                        sb.Append(" ");
+                    }
+                    for (k = 1; k <= i; k++)
+                    {
+                        sb.Append("*");
+                    }
+                    sb.Append("\n");
+                }
+                Label11.Text = sb.ToString();
             }   
             
             
@@ -109,7 +150,7 @@ namespace Braille_Shape_Generator_Client
                
                - [x] Communication with the service
                - [x] Calculating the number of dots
-               - [ ] Generating the braille numbers
+               - [x] Generating the braille numbers
             */
             // COMPLETED 1st 2 tasks by Himasha Gayathri on 04/06/2023
 
@@ -176,9 +217,6 @@ namespace Braille_Shape_Generator_Client
                     Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
                     Label11.Text = "- *" + "<br/>" + "* -" + "<br/>" + "- -";
                 }
-
-
-
 
                 // Call the GetBrailleDotsLetters method in the web service and pass in the selected letter from the drop-down list
                 if (CharactersDropDownList2.SelectedValue == "A")
@@ -338,12 +376,6 @@ namespace Braille_Shape_Generator_Client
                     Label11.Text = "* -" + "<br/>" + "- *" + "<br/>" + "* *";
                 }
             }
-
-
-
-
-
-
             Madawa.DataSource = client.GetLetters();
             Madawa.DataSource = client.GetNumbers();
 

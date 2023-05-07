@@ -59,7 +59,7 @@ namespace Braille_Shape_Generator_Service
         [WebMethod (EnableSession =true)]
         public double Triangle(double height, double width)
         {
-           double TriangleDots= Math.Round(0.5 * height * width);
+           double TriangleDots= Math.Round(width+(2* (Math.Sqrt(((width*width/4)+(height*height))))));
             //Generate Recent Activities for triangles
             List<String> triangles;
 
@@ -94,7 +94,7 @@ namespace Braille_Shape_Generator_Service
         [WebMethod (EnableSession =true)]
         public double Rectangle(double width, double height)
         {
-            double RecDots= (2*width)+(2*height);
+            double RecDots = ((2*width)+(2*height))-4;
             //Generate Recent Activities for 
             List<String> rectangles;
 
