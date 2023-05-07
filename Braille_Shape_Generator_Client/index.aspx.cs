@@ -185,7 +185,157 @@ namespace Braille_Shape_Generator_Client
                 {
                     int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
                     Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
-                    // Nalitha start from here. Same approach.
+                    Label11.Text = "* -" + "<br/>" + "- -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "B")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "C")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "D")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "E")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "F")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "* -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "G")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "* *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "H")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "I")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* -" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "J")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* *" + "<br/>" + "- -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "K")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- -" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "L")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* -" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "M")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- -" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "N")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- *" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "O")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- *" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "P")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "* -" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "Q")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "* *" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "R")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* *" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "S")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* -" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "T")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* *" + "<br/>" + "* -";
+                }
+                if (CharactersDropDownList2.SelectedValue == "U")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- -" + "<br/>" + "* *";
+                }
+                if (CharactersDropDownList2.SelectedValue == "V")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "* -" + "<br/>" + "* *";
+                }
+                if (CharactersDropDownList2.SelectedValue == "W")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "- *" + "<br/>" + "* *" + "<br/>" + "- *";
+                }
+                if (CharactersDropDownList2.SelectedValue == "X")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- -" + "<br/>" + "* *";
+                }
+                if (CharactersDropDownList2.SelectedValue == "Y")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* *" + "<br/>" + "- *" + "<br/>" + "* *";
+                }
+                if (CharactersDropDownList2.SelectedValue == "Z")
+                {
+                    int num1 = client.GetBrailleDotsLetters(CharactersDropDownList2.SelectedValue);
+                    Label10.Text = "Number of Dots required for " + CharactersDropDownList2.SelectedValue + " = " + num1.ToString();
+                    Label11.Text = "* -" + "<br/>" + "- *" + "<br/>" + "* *";
                 }
             }
 
